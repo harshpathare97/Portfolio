@@ -11,6 +11,7 @@
   </head>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Custom styles for animation */
         .animate-fade-in {
@@ -42,7 +43,6 @@
             <ul class="flex space-x-6">
                 <li><a href="#about" class="text-gray-300 hover:text-gray-100">About</a></li>
                 <li><a href="#projects" class="text-gray-300 hover:text-gray-100">Projects</a></li>
-                <li><a href="#skills" class="text-gray-300 hover:text-gray-100">Skills</a></li>
                 <li><a href="#contact" class="text-gray-300 hover:text-gray-100">Contact</a></li>
             </ul>
         </div>
@@ -64,12 +64,24 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800 text-center" data-aos="fade-up" data-aos-delay="100" >
+    <section id="about" class="py-20 bg-gray-800 text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-yellow-400 mb-4">About Me</h2>
-            <p class="text-lg text-gray-300">I'm a full stack developer with experience in front-end and back-end technologies. I love creating beautiful, user-friendly, responsive websites and applications.</p>
+            <p class="text-lg text-gray-300 mb-8">
+                I'm a full stack developer with experience in both front-end and back-end technologies. I specialize in creating beautiful, user-friendly, and responsive websites and applications.
+            </p>
+            
+            <!-- Skills Mentioned in Text -->
+            <p class="text-lg text-gray-300 mb-8">
+                I have a strong foundation in <strong class="text-yellow-400">HTML</strong>, <strong class="text-yellow-400">CSS</strong>, and <strong class="text-yellow-400">JavaScript</strong>, and I'm proficient with frameworks like <strong class="text-yellow-400">React.js</strong> and <strong class="text-yellow-400">Next.js</strong>. On the backend, I work with <strong class="text-yellow-400">Node.js</strong> and <strong class="text-yellow-400">Express.js</strong>, while using databases such as <strong class="text-yellow-400">MongoDB</strong> and <strong class="text-yellow-400">SQL</strong> for data management. Additionally, I am skilled in styling with <strong class="text-yellow-400">Tailwind CSS</strong> and version control using <strong class="text-yellow-400">Git</strong>.
+            </p>
+
+            <p class="text-lg text-gray-300 mb-8">
+                I am always eager to learn new technologies and continually strive to improve my skills in building robust, scalable, and high-performance applications.
+            </p>
         </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-700" data-aos="fade-up">
@@ -98,67 +110,26 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-800 text-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="max-w-6xl mx-auto text-center px-6">
-            <h2 class="text-4xl font-bold text-yellow-400 mb-4">Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">HTML</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">CSS</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">JavaScript</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">React.js</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Next.js</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Tailwind CSS</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Node.js</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Express.js</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">MongoDB</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">SQL</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Python</h3>
-                </div>
-                <div class="bg-yellow-400 text-black py-4 rounded-lg">
-                    <h3 class="text-lg font-semibold">Git</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-700 text-center" data-aos="fade-up">
+    <section id="contact" class="py-20 bg-gray-800 text-center" data-aos="fade-up">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-yellow-400 mb-4">Contact Me</h2>
-            <p class="text-lg text-gray-300 mb-8">Feel free to reach out to me for any opportunities or questions!</p>
+            <p class="text-lg text-gray-300 mb-8">Whether you have a project in mind, a question, or just want to connect, feel free to reach out!</p>
             <a href="mailto:hpathare97@gmail.com" class="bg-yellow-400 text-black py-2 px-6 rounded-full hover:bg-yellow-500 transition duration-300">Send an Email</a>
         </div>
     </section>
 
     
     <!-- Footer -->
-    <footer class="bg-gray-800 py-4 text-center">
+    <footer class="bg-gray-900 py-4 text-center">
         <p class="text-gray-400">&copy; 2025 Harsh Bhanudas Pathare. All rights reserved.</p>
-        <div class="space-x-4">
-            <a href="https://github.com/harshpathare97" target="_blank" class="text-gray-400 hover:text-white">GitHub</a>
-            <a href="https://www.linkedin.com/in/harsh-pathare" target="_blank" class="text-gray-400 hover:text-white">LinkedIn</a>
+        <div class="space-x-6">
+            <a href="https://github.com/harshpathare97" target="_blank" class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <i class="fab fa-github text-2xl"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/harsh-pathare" target="_blank" class="text-gray-400 hover:text-yellow-400 transition duration-300">
+                <i class="fab fa-linkedin text-2xl"></i> LinkedIn
+            </a>
         </div>
     </footer>
 
